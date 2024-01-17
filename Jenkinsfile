@@ -6,7 +6,7 @@ pipeline {
 	}
 
 	tools {
-		jdk 'java-17'
+		jdk 'jdk_1.8.0_322'
 	}
 
 	stages {
