@@ -7,14 +7,13 @@ pipeline {
 
 	tools {
 		jdk '8'
-		mvn '3'
 	}
 
 	stages {
 
 		stage('Build'){
 			steps {
-				sh "mvn clean install -DskipTests"
+				sh 'mvn clean install -DskipTests'
 			}
 		}
 
