@@ -7,6 +7,7 @@ pipeline {
 
 	tools {
 		jdk '8'
+		mvn '3'
 	}
 
 	stages {
