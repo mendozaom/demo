@@ -14,7 +14,7 @@ pipeline {
 
 		stage('Build'){
 			steps {
-				sh 'mvn clean install -DskipTests -X'
+				sh 'mvn clean install -DskipTests'
 			}
 		}
 
@@ -26,7 +26,7 @@ pipeline {
 
 		stage('Deploy') {
 			steps {
-			    sh "mvn jar:jar deploy:deploy"
+			    sh "mvn jar:jar deploy:deploy -X"
 			}
 		}
 	}
