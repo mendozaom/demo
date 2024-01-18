@@ -6,7 +6,7 @@ pipeline {
 	}
 
 	tools {
-		jdk '8'
+		jdk '17'
 		maven 'jenkins-maven'
 	}
 
