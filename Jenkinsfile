@@ -26,6 +26,7 @@ pipeline {
 
 		stage('Deploy') {
 			steps {
+			sh "mvn --version"	
 			    sh "mvn jar:jar deploy:deploy -X"
 			}
 		}
